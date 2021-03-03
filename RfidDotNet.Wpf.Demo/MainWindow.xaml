@@ -1,0 +1,21 @@
+﻿<Window x:Class="RfidDotNet.Wpf.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RfidDotNet.Wpf.Demo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" x:Name="errors">Errors</TextBox>
+        <TextBox Grid.Row="1" x:Name="connectionStatus">Connection</TextBox>
+        <TextBox Grid.Row="2" x:Name="tags">Tags</TextBox>
+        <Button Grid.Row="3" Click="Button_Click">Start</Button>
+    </Grid>
+</Window>
